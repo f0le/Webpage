@@ -2,7 +2,7 @@
 base_url = "https://folie.dev"
 
 # Set site title
-title = "Folie IT Freelance"
+title = "Folie IT Consultingg"
 
 # Set site description
 description = "IT Development and Consulting"
@@ -24,7 +24,7 @@ theme = "hallo"
 links = [
     { title = "E-Mail", url = "mailto:info@folie.dev", iconset = "fas", icon = "envelope" },
     { title = "GitHub", url = "https://github.com/f0le", icon = "github" },
-    { title = "Dev", url = "https://folie.dev/consulting", icon = "dev" },
+    { title = "Dev", url = "https://folie.dev/", icon = "dev" },
     { title = "PGP", url = "https://folie.dev/patrick@folie.dev.asc", iconset = "fas", icon = "key" },
     { title = "Blog", url = "https://blog.folie.dev", iconset = "fas", icon = "pencil-alt" },
 ]
