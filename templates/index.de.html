@@ -40,9 +40,9 @@
                 <img src="{{ get_url(path='images/portrait.jpg') }}" class="portrait" alt="Portrait" />
             </div>
             <div class="column right">
-                <h1> {{ config.extra.greeting | default(value="Hallo") }} </h1>
-                <h2>{{ config.extra.iam | default(value="I am") }} {{ config.extra.author.name | default(value="Hallo") }}.</h2>
-                <p>{% include "partials/introduction.html" %}</p>
+                <h1>{{ config.extra.de.greeting | default(value="Hello") }}</h1>
+                <h2>{{ config.extra.de.iam | default(value="I am") }} {{ config.extra.author.name | default(value="Hallo") }}.</h2>
+                <p>{% include "partials/introduction.de.html" %}</p>
                 
                 {% if config.extra.links %}
                     <div class="links">
