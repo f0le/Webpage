@@ -47,6 +47,15 @@
                 {% if config.extra.links %}
                     <div class="links">
                         {% for link in config.extra.links %}
+                        {% if link.url is containing("services") %}
+                            <a rel="me" href="https://folie.dev/de/services" title="{{ link.title }}">
+                                {% if link.iconset %}
+                                    <span class="{{ link.iconset }} {{ 'fa-' ~ link.icon }}"></span>
+                                {% else %}
+                                    <span class="fab {{ 'fa-' ~ link.icon }}"></span>
+                                {% endif %}
+
+                        {% else %}
                             <a rel="me" href="{{ link.url }}" title="{{ link.title }}">
                                 {% if link.iconset %}
                                     <span class="{{ link.iconset }} {{ 'fa-' ~ link.icon }}"></span>
@@ -54,6 +63,8 @@
                                     <span class="fab {{ 'fa-' ~ link.icon }}"></span>
                                 {% endif %}
                             </a>
+
+                        {% endif %}
                         {% endfor %}
                     </div>
                 {% endif %}
