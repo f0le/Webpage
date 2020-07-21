@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>{{ config.title }}</title>
+    
+        <link rel="stylesheet" href="{{ get_url(path='fonts.css') }}">
+        <link rel="stylesheet" href="{{ get_url(path='fontawesome/css/fontawesome.css') }}">
+        <link rel="stylesheet" href="{{ get_url(path='services.css') }}">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+        {% if config.extra.theme %}
+            <style>
+    	        body {
+    	            color: {{ config.extra.theme.foreground }} !important;
+    	            background-color: {{ config.extra.theme.background }} !important;
+    	        }
+    	
+    	        a {
+    	            color: {{ config.extra.theme.foreground }} !important;
+    	        }
+    	
+    	        a:hover {
+    	            color: {{ config.extra.theme.hover }} !important;
+    	        }
+    	
+    	
+    	        img.portrait {
+    	            border: 10px solid {{ config.extra.theme.foreground }} !important;
+    	        }
+    	    </style>
+    	{% endif %}
+
+    </head>
+    <body>
+        <main>
+            <div class="column left">
+                
+                {{ page.content | safe }}
+
+            </div>
+            <div class="column right">
+
+                <img src="{{ get_url(path='photo-1579274216947-86eaa4b00475.webp') }}" class="portrait" alt="Portrait" />
+
+            </div>
+        </main>
+    </body>
+</html>

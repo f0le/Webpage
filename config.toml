@@ -26,11 +26,11 @@ languages = [
 
 [extra]
 links = [
-    { title = "E-Mail", url = "mailto:info@folie.dev", iconset = "fas", icon = "envelope" },
-    { title = "GitHub", url = "https://github.com/f0le", icon = "github" },
-    { title = "Dev", url = "https://folie.dev/", icon = "dev" },
-    { title = "PGP", url = "https://folie.dev/patrick@folie.dev.asc", iconset = "fas", icon = "key" },
-    { title = "Blog", url = "https://blog.folie.dev", iconset = "fas", icon = "pencil-alt" },
+    { title = "E-Mail", url = "mailto:info@folie.dev", iconset = "fas", icon = "envelope fa-2x" },
+    { title = "GitHub", url = "https://github.com/f0le", icon = "github fa-2x" },
+    { title = "Dev", url = "https://folie.dev/", icon = "dev fa-2x" },
+    { title = "PGP", url = "https://folie.dev/patrick@folie.dev.asc", iconset = "fas", icon = "key fa-2x" },
+    { title = "Blog", url = "https://blog.folie.dev", iconset = "fas", icon = "pencil-alt fa-2x" },
 ]
 
 greeting = "Hello!"
